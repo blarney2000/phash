@@ -1,0 +1,2 @@
+# phash
+Fast image hasher
