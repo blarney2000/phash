@@ -12,14 +12,15 @@ for (let i = 0; i < 64; i++) {
   pHashElement.append(cell);
 }
 
-function scaleImage(){
-  let img = new Image();
-  let canvas = document.createElement('canvas')
-  let ctx = canvas.getContext('2d')
-  
-
+let canvas = document.createElement('canvas');
+let ctx = canvas.getContext('2d');
+let image = new Image();
+function getScaledImage(imageid) {
+  img = document.getElementById('squirrel1').Image;
+  console.log(img);
+}
+function scaleImage() {
+  ctx.drawImage;
 }
 
-function getPhashRows(){
-
-}
+function getPhashRows() {}
