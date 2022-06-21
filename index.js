@@ -12,4 +12,14 @@ for (let i = 0; i < 64; i++) {
   pHashElement.append(cell);
 }
 
+function scaleImage(){
+  let img = new Image();
+  let canvas = document.createElement('canvas')
+  let ctx = canvas.getContext('2d')
+  
 
+}
+
+function getPhashRows(){
+
+}
