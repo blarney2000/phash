@@ -14,11 +14,18 @@ for (let i = 0; i < 64; i++) {
 
 let canvas = document.createElement('canvas');
 let ctx = canvas.getContext('2d');
-let image = new Image();
+
 function getScaledImage(imageid) {
   ctx.drawImage(document.getElementById('squirrel1'), 0, 0);
-  //let img = canvas.toDataURL('image/png');
-  //console.log(img);
+  let img = canvas.toDataURL('image/png');
+  console.log(img);
+
+  let image = new Image();
+  image.onload = function () {
+    ctx.drawImage(image, 0, 0);
+  };
+  image.src = img;
+  //document.getElementById('scaled').src = img;
 
   // const img = document.getElementById('squirrel1').Image;
   // console.log(img);
